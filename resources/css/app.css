@@ -1,0 +1,303 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 20px 50px;
+}
+
+/* 見出しスタイル */
+h1 {
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.nav-link a{
+    font-size: 0.74rem;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.post-index-filter {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.post-index-filter a {
+    padding: 10px 15px;
+    background: #F99F48;
+    color: #fff;
+    margin-right: 10px;
+}
+
+#post-list img {
+    height: 230px;
+}
+
+.list-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.alert-success {
+    margin-bottom: 30px;
+    background: #64BCFC;
+    padding: 20px;
+    color: #fff;
+}
+
+.alert-danger {
+    background: #EF866B;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.list-group::after{
+    content:"";
+    display: block;
+    width:30%;
+}
+
+.list-group a {
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.list-group-content {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-group-content p {
+    font-size: 0.8rem;
+}
+
+.list-group-title {
+    font-size: 1.3rem;
+}
+
+.list-group-category {
+    background: #64BCFC;
+    color: #fff;
+    border-radius: 14px;
+    padding: 3px 17px;
+}
+
+/* リンクのスタイル */
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover, button:hover {
+    opacity: 0.8;
+}
+
+.form-label {
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.label-required {
+    border-radius: 6px;
+    margin-right: 8px;
+    padding: 4px;
+    display: inline-block;
+    text-align: center;
+    background: #5bc8ac;
+    color: #fff;
+    font-size: 6px;
+    position: relative;
+    bottom: 2px;
+}
+.form-input {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    background: #eaedf2;
+    font-size: 18px;
+}
+
+.form-textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding-left: 1em;
+    padding-right: 1em;
+    flex: 1;
+    height: 150px;
+    width: 100%;
+    background: #eaedf2;
+    font-size: 18px;
+}
+
+.form-item {
+    padding: 15px 0;
+    width: 70%;
+    margin: auto;
+}
+
+.image-preview {
+    padding-bottom: 10px;
+}
+#image-preview {
+    margin: auto;
+    max-width: 700px;
+}
+
+.post-show-img {
+    padding: 0 100px;
+}
+
+.post-show-img img {
+    width: 80%;
+    margin: auto;
+    max-width: 650px;
+}
+
+#post-show-text {
+    padding: 20px 130px;
+}
+
+.post-show-content {
+    padding-top: 30px;
+}
+
+#post-show-other {
+    text-align: center;
+    padding-top: 30px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.comment {
+    border-top: 1px solid #CCCCCC;
+    padding: 20px 130px;
+    margin-top: 30px;
+}
+
+.comment-add textarea {
+    width: 100%;
+}
+
+.comment-add-button {
+    text-align: right;
+}
+
+.comment-add-button button {
+    background: #888897;
+    color: #fff;
+    padding: 8px;
+    font-size: 12px;
+}
+
+.comment-delete {
+    padding-top: 20px;
+}
+
+.comment-delete-button {
+    text-align: right;
+}
+
+.comment-delete-button button {
+    background: #EF866B;
+    padding: 5px;
+    font-size: 10px;
+    color: #fff;
+}
+
+.submit {
+    text-align: center;
+}
+
+.submit input {
+    border-radius: 100vh;
+    background: #888897;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.link {
+    border-radius: 100vh;
+    background: #B4CCE3;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+#category-index {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.category-index-name {
+    border: 1.3px solid #DFDFDF;
+    width: 70%;
+    background: #fff;
+    padding: 10px;
+}
+
+.category-index-name a {
+    display: block;
+}
+
+.category-index-edit {
+    width: 54px;
+    background: #888897;
+    margin-left: 10px;
+}
+
+.category-index-edit a {
+    color: #fff;
+    padding: 11px;
+    display: block;
+}
+
+.category-index-delete {
+    background: #64BCFC;
+}
+
+#category-index table {
+    width: 100%;
+}
+
+.category-index-delete button {
+    color: #fff;
+    padding: 11px;
+}
+
+
+@media screen and (max-width: 720px) {
+    .post-show-img img {
+        width: 100%;
+    }
+
+    #post-show-text, .comment {
+        padding: 20px 35px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .nav-link {
+        margin-left: 1.5rem !important;
+    }
+}
